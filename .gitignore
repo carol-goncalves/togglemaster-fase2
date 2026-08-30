@@ -4,3 +4,4 @@ targeting-service/
 evaluation-service/
 analytics-service/
 .DS_Store
+global-bundle.pem
