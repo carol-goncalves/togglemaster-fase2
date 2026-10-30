@@ -18,7 +18,7 @@ images:
 
   - name: 442256262009.dkr.ecr.us-east-1.amazonaws.com/togglemaster-flag
     newName: 698126163746.dkr.ecr.us-east-1.amazonaws.com/togglemaster-flag
-    newTag: b2caf69a488047408d488d7ca3c7cca61a2b05a8
+    newTag: 2ead7fe27e8b11559a0b0d38313f90833d7eee02
 
   - name: 442256262009.dkr.ecr.us-east-1.amazonaws.com/togglemaster-targeting
     newName: 698126163746.dkr.ecr.us-east-1.amazonaws.com/togglemaster-targeting
