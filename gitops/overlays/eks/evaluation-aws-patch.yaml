@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: evaluation-service
+  namespace: togglemaster
+spec:
+  template:
+    spec:
+      containers:
+        - name: evaluation-service
+          envFrom:
+            - secretRef:
+                name: togglemaster-aws-demo

@@ -5,6 +5,8 @@ resources:
   - ../../../k8s
 
 patches:
+  - path: evaluation-aws-patch.yaml
+  - path: analytics-aws-patch.yaml
   - path: configmap-patch.yaml
   - path: analytics-scheduling-patch.yaml
   - path: evaluation-scheduling-patch.yaml

@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: analytics-service
+  namespace: togglemaster
+spec:
+  template:
+    spec:
+      containers:
+        - name: analytics-service
+          envFrom:
+            - secretRef:
+                name: togglemaster-aws-demo
