@@ -14,7 +14,7 @@ patches:
 images:
   - name: 442256262009.dkr.ecr.us-east-1.amazonaws.com/togglemaster-auth
     newName: 698126163746.dkr.ecr.us-east-1.amazonaws.com/togglemaster-auth
-    newTag: 52ca8bb793406946a8faf0c1bb89eb780822fe1e
+    newTag: 569b2dfdb518895003337c55478eb3edaf95d05c
 
   - name: 442256262009.dkr.ecr.us-east-1.amazonaws.com/togglemaster-flag
     newName: 698126163746.dkr.ecr.us-east-1.amazonaws.com/togglemaster-flag
