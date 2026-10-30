@@ -1,0 +1,30 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ../../../k8s
+
+patches:
+  - path: configmap-patch.yaml
+  - path: analytics-patch.yaml
+
+images:
+  - name: 442256262009.dkr.ecr.us-east-1.amazonaws.com/togglemaster-auth
+    newName: 698126163746.dkr.ecr.us-east-1.amazonaws.com/togglemaster-auth
+    newTag: 52ca8bb793406946a8faf0c1bb89eb780822fe1e
+
+  - name: 442256262009.dkr.ecr.us-east-1.amazonaws.com/togglemaster-flag
+    newName: 698126163746.dkr.ecr.us-east-1.amazonaws.com/togglemaster-flag
+    newTag: b2caf69a488047408d488d7ca3c7cca61a2b05a8
+
+  - name: 442256262009.dkr.ecr.us-east-1.amazonaws.com/togglemaster-targeting
+    newName: 698126163746.dkr.ecr.us-east-1.amazonaws.com/togglemaster-targeting
+    newTag: a64b012816e08b7f2f7043df7a62803cf8832f34
+
+  - name: 442256262009.dkr.ecr.us-east-1.amazonaws.com/togglemaster-evaluation
+    newName: 698126163746.dkr.ecr.us-east-1.amazonaws.com/togglemaster-evaluation
+    newTag: ee2caee1df117ac6240bbdfca3814b0c16715c71
+
+  - name: 442256262009.dkr.ecr.us-east-1.amazonaws.com/togglemaster-analytics
+    newName: 698126163746.dkr.ecr.us-east-1.amazonaws.com/togglemaster-analytics
+    newTag: b0526650f3a844ddcb7a9794fa9a6dab0e771425

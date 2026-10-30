@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: analytics-service
+  namespace: togglemaster
+spec:
+  template:
+    spec:
+      containers:
+        - name: analytics-service
+          env:
+            - name: DYNAMODB_ENDPOINT_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: togglemaster-config
+                  key: DYNAMODB_ENDPOINT_URL
+            - name: AWS_ACCESS_KEY_ID
+              value: local
+            - name: AWS_SECRET_ACCESS_KEY
+              value: local
