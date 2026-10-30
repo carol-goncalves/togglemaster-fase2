@@ -22,7 +22,7 @@ images:
 
   - name: 442256262009.dkr.ecr.us-east-1.amazonaws.com/togglemaster-targeting
     newName: 698126163746.dkr.ecr.us-east-1.amazonaws.com/togglemaster-targeting
-    newTag: a64b012816e08b7f2f7043df7a62803cf8832f34
+    newTag: 340c7ca8c92674adadec0a91db7a8cf2b9596f4b
 
   - name: 442256262009.dkr.ecr.us-east-1.amazonaws.com/togglemaster-evaluation
     newName: 698126163746.dkr.ecr.us-east-1.amazonaws.com/togglemaster-evaluation
